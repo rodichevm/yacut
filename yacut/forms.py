@@ -18,11 +18,12 @@ class URLMapForm(FlaskForm):
         validators=[
             Optional(),
             Length(
+                min=1,
                 max=MAX_LENGHT_USER_URL,
                 message=f'Количество символов больше {MAX_LENGHT_USER_URL}'
             ),
             Regexp(
-                regex='[a-zA-Z0-9]',
+                regex='[0-9A-Za-z]+',
                 message='Ссылка содержит недопустимые символы'
             )
         ]
