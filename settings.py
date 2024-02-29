@@ -8,4 +8,4 @@ class Config(object):
 
 
 #  Константы
-MAX_LENGHT_USER_URL = 16
+MAX_LENGHT_USER_URL = 6
